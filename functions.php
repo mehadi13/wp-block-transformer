@@ -4,7 +4,7 @@ function blank_theme_enqueue_scripts() {
     wp_enqueue_script(
         'custom-block-editor',
         get_template_directory_uri() . '/custom-block-editor.js',
-        array('wp-blocks', 'wp-element', 'wp-editor', 'wp-data'),
+        array('wp-plugins', 'wp-edit-post', 'wp-element', 'wp-components', 'wp-data', 'wp-i18n'),
         filemtime(get_template_directory() . '/custom-block-editor.js'),
         true
     );

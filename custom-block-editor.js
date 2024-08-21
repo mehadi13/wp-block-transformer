@@ -1,12 +1,24 @@
-// This function can be used to extract the block data
 function extractBlockData() {
     const { select } = wp.data;
-    const blocks = select('core/block-editor').getBlocks();
-    console.log(blocks);
 
-    // For demonstration, let's log the JSON structure
-    blocks.forEach(block => {
-        console.log(JSON.stringify(transformBlock(block), null, 2));
+    // Use subscribe to ensure that the data is ready
+    const unsubscribe = wp.data.subscribe(() => {
+        const blocks = select('core/block-editor').getBlocks();
+
+        if (blocks.length > 0) {
+            console.log('Blocks loaded:', blocks);
+
+            // For demonstration, log the JSON structure
+            // blocks.forEach(block => {
+            //     console.log(JSON.stringify(transformBlock(block), null, 2));
+            // });
+
+            // Stop subscribing once the blocks have loaded
+            unsubscribe();
+        } 
+        // else {
+        //     console.log('Blocks not yet loaded');
+        // }
     });
 }
 

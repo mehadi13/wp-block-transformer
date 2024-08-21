@@ -8,6 +8,12 @@
 </head>
 <body <?php body_class(); ?>>
     <h1>Welcome to Blank Theme</h1>
+
+        <!-- Add a button here -->
+        <div class="custom-button-container">
+        <button id="extract-blocks-button">Extract Block Data</button>
+    </div>
+
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <h2><?php the_title(); ?></h2>
         <?php the_content(); ?>
