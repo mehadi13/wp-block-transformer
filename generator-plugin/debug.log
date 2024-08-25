@@ -1,0 +1,35 @@
+[2024-08-25 10:39:10] Received a POST request ccccc
+[2024-08-25 10:39:10] /guentwise/src/testtemplate.json
+[2024-08-25 10:39:10] 
+[2024-08-25 10:39:44] Received a POST request ccccc
+[2024-08-25 10:39:44] /guentwise/src/testtemplate.json
+[2024-08-25 10:39:44] false
+[2024-08-25 10:40:51] Received a POST request ccccc
+[2024-08-25 10:40:51] C:\Users\PROGRAMMER DoICT\Local Sites\wp-dev\app\public\wp-content\plugins\transform//testtemplate.json
+[2024-08-25 10:40:51] true
+[2024-08-25 10:43:14] Received a POST request ccccc
+[2024-08-25 10:43:14] C:\Users\PROGRAMMER DoICT\Local Sites\wp-dev\app\public\wp-content\plugins
+[2024-08-25 10:43:14] C:\Users\PROGRAMMER DoICT\Local Sites\wp-dev\app\public\wp-content\plugins\transform//testtemplate.json
+[2024-08-25 10:43:14] true
+[2024-08-25 10:44:18] Received a POST request ccccc
+[2024-08-25 10:44:18] dirname::
+[2024-08-25 10:44:18] C:\Users\PROGRAMMER DoICT\Local Sites\wp-dev\app\public\wp-content\plugins
+[2024-08-25 10:44:18] filename::
+[2024-08-25 10:44:18] C:\Users\PROGRAMMER DoICT\Local Sites\wp-dev\app\public\wp-content\plugins\transform//testtemplate.json
+[2024-08-25 10:44:18] true
+[2024-08-25 10:45:58] Received a POST request ccccc
+[2024-08-25 10:45:58] filename::
+[2024-08-25 10:45:58] C:\Users\PROGRAMMER DoICT\Local Sites\wp-dev\app\public\wp-content\plugins/test/template.json
+[2024-08-25 10:45:58] false
+[2024-08-25 10:46:44] Received a POST request ccccc
+[2024-08-25 10:46:44] filename::
+[2024-08-25 10:46:44] C:\Users\PROGRAMMER DoICT\Local Sites\wp-dev\app\public\wp-content\plugins\test\template.json
+[2024-08-25 10:46:44] false
+[2024-08-25 10:47:43] Received a POST request ccccc
+[2024-08-25 10:47:43] filename::
+[2024-08-25 10:47:43] C:\Users\PROGRAMMER DoICT\Local Sites\wp-dev\app\public\wp-content\plugins\test\template.json
+[2024-08-25 10:47:43] false
+[2024-08-25 10:48:07] Received a POST request ccccc
+[2024-08-25 10:48:07] filename::
+[2024-08-25 10:48:07] C:\Users\PROGRAMMER DoICT\Local Sites\wp-dev\app\public\wp-content\plugins\transform\template.json
+[2024-08-25 10:48:07] true
