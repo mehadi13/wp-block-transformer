@@ -4,8 +4,8 @@ import { drafts } from '@wordpress/icons';
 import { PanelBody, TextControl, Button } from '@wordpress/components';
 import { useState, useEffect } from '@wordpress/element';
 import { useSelect } from '@wordpress/data';
-import readBlocks from './BlockGenerator';
-import { BlockItem } from './BlockItem';
+import BlockItem from './BlockItem';
+
 
 const PluginSidebarMoreMenuItemTest = () => {
     const [inputValue, setInputValue] = useState('');
@@ -17,6 +17,19 @@ const PluginSidebarMoreMenuItemTest = () => {
     const handleButtonClick = () => {
         readBlocks(inputValue);
     };
+
+    const readBlocks = (name) => {
+        // Get all blocks named 'core/paragraph'
+        const blockNames = ['core/paragraph'];
+
+        // Use the `useSelect` hook to access the global state and get blocks by name
+        const blocks = useSelect((select) => {
+            const { getBlocksByName } = select('core/block-editor');
+            return getBlocksByName(blockNames);
+        }, [blockNames]);
+
+        console.log(blocks);
+    }
 
     return (
         <>
@@ -40,7 +53,7 @@ const PluginSidebarMoreMenuItemTest = () => {
                     <ul>
                         {blocks.map((block, index) => (
                             <li key={index}>
-                                <BlockItem block={block}/>
+                                <BlockItem block={block} />
                             </li>
                         ))}
                     </ul>
